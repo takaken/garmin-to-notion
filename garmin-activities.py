@@ -32,7 +32,7 @@ ACTIVITY_ICONS = {
 }
 
 
-def get_all_activities(garmin_client: GarminClient, limit: int = 1000) -> list[dict]:
+def get_all_activities(garmin_client: GarminClient, limit: int = 2000) -> list[dict]:
     return garmin_client.get_activities(0, limit)
 
 
